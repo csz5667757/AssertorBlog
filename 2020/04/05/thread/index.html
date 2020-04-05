@@ -4,28 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="使用MarkDown编辑器写博客, AssertorBlog">
-    <meta name="description" content="使用MarkDown写下我的第一篇博客
-¶标题
-¶段落格式
-段落的换行使用两个空格加回车
-斜体文字
-粗体文字
-下面有一个分割线
-
-这段文字有删除线
-使用u标签为文本添加下划线
-¶列表
-
-使用“+”来分点
-
-
-第一点
-第二点
-第三点
-
-
-第二">
+    <meta name="keywords" content="多线程与高并发学习笔记（一）, AssertorBlog">
+    <meta name="description" content="java内存模型
+作用：jmm是一种规范，它规范了jvm是如何与计算机内存协同工作的，它规定了一个线程如何和何时能看到其它线程修改过的共享变量的值，以及在必须时如何同步的访问共享变量
+¶堆
+运行时的数据区，优势是可以动态分配内存大小，垃圾回">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -33,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>使用MarkDown编辑器写博客 | AssertorBlog</title>
+    <title>多线程与高并发学习笔记（一） | AssertorBlog</title>
     <link rel="icon" type="image/jpeg" href="/medias/logos.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -301,12 +284,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('http://47.103.107.233:8088/cover.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">使用MarkDown编辑器写博客</h1>
+                    <h1 class="description center-align post-title">多线程与高并发学习笔记（一）</h1>
                 </div>
             </div>
         </div>
@@ -423,8 +406,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/MarkDown/">
-                                <span class="chip bg-color">MarkDown</span>
+                            <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">
+                                <span class="chip bg-color">多线程</span>
                             </a>
                         
                     </div>
@@ -435,8 +418,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
-                                工具
+                            <a href="/categories/java%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="post-category">
+                                java多线程
                             </a>
                         
                     </div>
@@ -448,7 +431,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-22
+                    2020-04-05
                 </div>
                 
 
@@ -465,90 +448,55 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1>使用MarkDown写下我的第一篇博客</h1>
-<h2 id="标题"><a class="header-anchor" href="#标题">¶</a>标题</h2>
-<h2 id="段落格式"><a class="header-anchor" href="#段落格式">¶</a>段落格式</h2>
-<p>段落的换行使用两个空格加回车<br>
-<em>斜体文字</em><br>
-<em>粗体文字</em><br>
-下面有一个分割线</p>
-<hr>
-<p><s>这段文字有删除线</s></p>
-<p><u>使用u标签为文本添加下划线</u></p>
-<h2 id="列表"><a class="header-anchor" href="#列表">¶</a>列表</h2>
-<ol>
-<li>使用“+”来分点</li>
-</ol>
+                <h1>java内存模型</h1>
+<p>作用：jmm是一种规范，它规范了jvm是如何与计算机内存协同工作的，它规定了一个线程如何和何时能看到其它线程修改过的共享变量的值，以及在必须时如何同步的访问共享变量</p>
+<h2 id="堆"><a class="header-anchor" href="#堆">¶</a>堆</h2>
+<p>运行时的数据区，优势是可以动态分配内存大小，垃圾回收器可以自动收走不在需要的数据。缺点是由于需要动态分配内存，存取的速度较慢</p>
+<h2 id="栈"><a class="header-anchor" href="#栈">¶</a>栈</h2>
+<p>存取速度快，仅次于计算机里的寄存器，栈的数据可以共享。缺点是存储数据的大小是确定的，缺乏灵活性。栈中存储了基本数据类型变量，如int，short, long,  float, double,char,byte, boolean</p>
+<p><img src="http://47.103.107.233:8088/hexo/image-20200229160121072.png" alt="image-20200229160121072"></p>
+<p><img src="http://47.103.107.233:8088/hexo/image-20200229160331686.png" alt="image-20200229160331686"></p>
+<h1>并发的优势与风险</h1>
+<p><img src="http://47.103.107.233:8088/hexo/image-20200229161133437.png" alt="image-20200229161133437"></p>
+<h1>多线程</h1>
+<p>线程安全性：当多个线程访问某个类时，不管运行时环境采用<strong>何种调度方式</strong>或者这些进程将如何交替执行，并且在主调代码中<strong>不需要任何额外的同步或协同</strong>，这个类都能表现出<strong>正确的行为</strong>，那么就称这个类是线程安全的。</p>
 <ul>
-<li>第一点</li>
-<li>第二点</li>
-<li>第三点</li>
+<li>原子性：提供了互斥访问，同一时刻只能有一个线程来对它进行操作</li>
 </ul>
-<ol start="2">
-<li>第二项<br>
-创建脚注<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup><br>
-hexo本身是不支持脚标的，这里我使用了hexo-renderer-markdown-it这个插件</li>
-</ol>
-<h2 id="区块使用"><a class="header-anchor" href="#区块使用">¶</a>区块使用</h2>
-<blockquote>
-<p>使用“&gt;”、“&gt;&gt;”、“&gt;&gt;&gt;”来为区块分级</p>
-<blockquote>
-<p>第二级</p>
-<blockquote>
-<p>第三级</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="代码块"><a class="header-anchor" href="#代码块">¶</a>代码块</h2>
-<p>使用“<code>[语言（可选）]      </code>”</p>
-<pre class=" language-language-java"><code class="language-language-java">public class markdown{
-	public static void main(args[] String){
-		System.out.print("这是一段java代码");
-	}
-}
+<p><img src="http://47.103.107.233:8088/hexo/image-20200229184042558.png" alt="image-20200229184042558"></p>
+<p>CAS算法：比较和交换 在Atomic包里用法较多，比如AtomicInteger的incrementAndGet方法</p>
+<p>调用了Unsafe类里的native方法getAndAddInt</p>
+<pre class=" language-language-java"><code class="language-language-java">public final int getAndAddInt(Object var1, long var2, int var4) {
+        int var5;
+        do {
+            var5 = this.getIntVolatile(var1, var2);
+        } while(!this.compareAndSwapInt(var1, var2, var5, var5 + var4));
+    //通过getIntVolatile方法获取var1对象的变量在主存中的最新值var5与var2相比较，如过相同才会执行相加操作，不相同会继续读取在主存中的值
+        return var5;
+    }
 </code></pre>
-<h2 id="外部链接"><a class="header-anchor" href="#外部链接">¶</a>外部链接</h2>
-<p>使用“[链接名称]  (链接地址)”<br>
-这是一个链接<a href="http://47.103.107.233:8090" target="_blank" rel="noopener">毕业设计地址</a></p>
-<h2 id="添加图片"><a class="header-anchor" href="#添加图片">¶</a>添加图片</h2>
-<p>使用“![图片的替代文字]  (图片链接 “title”)”<br>
-<img src="http://47.103.107.233:8088/111/timg.jpg" alt="迪丽热巴" title="迪丽热巴"></p>
-<h2 id="使用表格"><a class="header-anchor" href="#使用表格">¶</a>使用表格</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">姓名</th>
-<th style="text-align:right">年龄</th>
-<th style="text-align:center">性别</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">陈世哲</td>
-<td style="text-align:right">22</td>
-<td style="text-align:center">男</td>
-</tr>
-<tr>
-<td style="text-align:left">郑奇奇</td>
-<td style="text-align:right">22</td>
-<td style="text-align:center">男</td>
-</tr>
-</tbody>
-</table>
-<p>使用“|”隔开每一列<br>
-“|—|”用来区分表头与表体<br>
-“|:—:|”为居中<br>
-“|:—|”为居左<br>
-“|—:|”为居右</p>
-<h2 id="插入流程图、时序图、甘特图等"><a class="header-anchor" href="#插入流程图、时序图、甘特图等">¶</a>插入流程图、时序图、甘特图等</h2>
-<p>在typora中画好后将源码粘贴至编辑器</p>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>码出未来 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+<ul>
+<li>可见性：一个线程对主内存的修改可以及时的被其他线程观察到</li>
+</ul>
+<p><img src="http://47.103.107.233:8088/hexo/image-20200229184442326.png" alt="image-20200229184442326"></p>
+<p><img src="http://47.103.107.233:8088/hexo/image-20200229184731544.png" alt="image-20200229184731544"></p>
+<p><img src="http://47.103.107.233:8088/hexo/image-20200229184709974.png" alt="image-20200229184709974"></p>
+<p>应用场景：</p>
+<p><img src="http://47.103.107.233:8088/hexo/image-20200229185347816.png" alt="image-20200229185347816"></p>
+<ul>
+<li>
+<p>有序性：一个线程观察其它线程中的指令执行顺序，由于指令重排序的存在，该观察结果一般杂乱无序</p>
+<p><img src="http://47.103.107.233:8088/hexo/image-20200229190220735.png" alt="image-20200229190220735"></p>
+<hr>
 </li>
-</ol>
-</section>
+</ul>
+<p><img src="http://47.103.107.233:8088/hexo/image-20200229185840173.png" alt="image-20200229185840173"></p>
+<hr>
+<p><img src="http://47.103.107.233:8088/hexo/image-20200229185915892.png" alt="image-20200229185915892"></p>
+<hr>
+<p><img src="http://47.103.107.233:8088/hexo/image-20200229190005066.png" alt="image-20200229190005066"></p>
+<h2 id="安全发布对象"><a class="header-anchor" href="#安全发布对象">¶</a>安全发布对象</h2>
+<p><img src="http://47.103.107.233:8088/hexo/image-20200302110803490.png" alt="image-20200302110803490"></p>
 
             </div>
             <hr/>
@@ -574,7 +522,7 @@ hexo本身是不支持脚标的，这里我使用了hexo-renderer-markdown-it这
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/02/22/shi-yong-markdown-bian-ji-qi/">http://yoursite.com/2020/02/22/shi-yong-markdown-bian-ji-qi/</a>
+                    <a href="http://yoursite.com/2020/04/05/thread/">http://yoursite.com/2020/04/05/thread/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -612,8 +560,8 @@ hexo本身是不支持脚标的，这里我使用了hexo-renderer-markdown-it这
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/MarkDown/">
-                                    <span class="chip bg-color">MarkDown</span>
+                                <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">
+                                    <span class="chip bg-color">多线程</span>
                                 </a>
                             
                         </div>
@@ -784,7 +732,7 @@ hexo本身是不支持脚标的，这里我使用了hexo-renderer-markdown-it这
         repo: 'AssertorBlog',
         owner: 'csz5667757',
         admin: ["csz5667757"],
-        id: '2020-02-22T15-37-00',
+        id: '2020-04-05T11-25-21',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -805,9 +753,10 @@ hexo本身是不支持脚标的，这里我使用了hexo-renderer-markdown-it这
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/04/05/thread/">
                     <div class="card-image">
@@ -828,9 +777,9 @@ hexo本身是不支持脚标的，这里我使用了hexo-renderer-markdown-it这
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -843,6 +792,7 @@ hexo本身是不支持脚标的，这里我使用了hexo-renderer-markdown-it这
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -861,32 +811,63 @@ hexo本身是不支持脚标的，这里我使用了hexo-renderer-markdown-it这
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/21/hello-world/">
+                <a href="/2020/02/22/shi-yong-markdown-bian-ji-qi/">
                     <div class="card-image">
                         
+                        <img src="http://47.103.107.233:8088/cover.jpg" class="responsive-img" alt="使用MarkDown编辑器写博客">
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">使用MarkDown编辑器写博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            使用MarkDown写下我的第一篇博客
+¶标题
+¶段落格式
+段落的换行使用两个空格加回车
+斜体文字
+粗体文字
+下面有一个分割线
+
+这段文字有删除线
+使用u标签为文本添加下划线
+¶列表
+
+使用“+”来分点
+
+
+第一点
+第二点
+第三点
+
+
+第二
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-22
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Assertor
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    工具
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/MarkDown/">
+                        <span class="chip bg-color">MarkDown</span>
+                    </a>
+                    
                 </div>
                 
             </div>
